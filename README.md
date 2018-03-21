@@ -39,8 +39,27 @@ See the documentation added after the last workshop:
 
 * https://github.com/rsp/nw2
 
-Node
+Certification
 =
+
+The official certification program under development:
+
+Node.js Certified Developer (NCD) Program
+-
+
+More info on:
+
+* https://foundation.nodejs.org/resources/certification
+
+Public info about the program scope, recommended books, etc.:
+
+* https://github.com/nodejs-certified-developer
+
+Disclaimer
+-
+As a Node.js Foundation Certification Committee Member
+I cannot say anything more than what is available
+publically under the links above so please stop asking.
 
 Language
 =
@@ -56,7 +75,6 @@ TC39
 Proposals:
 
 * https://github.com/tc39/proposals
-
 
 MDN Docs
 -
@@ -79,7 +97,6 @@ ECMAScript compatibility tables
   * https://kangax.github.io/compat-table/esnext/
   * https://kangax.github.io/compat-table/esintl/
   * https://kangax.github.io/compat-table/non-standard/
-
 
 * https://node.green/
 
@@ -129,6 +146,12 @@ Install:
 $ npm install -g babel-cli
 ```
 
+Use:
+
+```sh
+$ babel file.js
+```
+
 Explain:
 
 * https://babeljs.io/env/
@@ -176,6 +199,17 @@ Run:
 $ node file
 ```
 
+GitHub
+-
+* https://github.com/
+
+Travis
+-
+* https://travis-ci.org/
+
+npm
+-
+* https://www.npmjs.com/
 
 [github-follow-url]: https://github.com/rsp
 [github-follow-img]: https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow
