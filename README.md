@@ -211,6 +211,25 @@ npm
 -
 * https://www.npmjs.com/
 
+ESLint
+-
+* https://www.npmjs.com/package/eslint
+
+Tests
+-
+Popular modules:
+
+* https://www.npmjs.com/package/tap
+* https://www.npmjs.com/package/tape
+* https://www.npmjs.com/package/jasmine
+* https://www.npmjs.com/package/mocha
+* https://www.npmjs.com/package/chai
+
+More:
+
+* https://www.npmjs.com/browse/keyword/test
+
+
 [github-follow-url]: https://github.com/rsp
 [github-follow-img]: https://img.shields.io/github/followers/rsp.svg?style=social&label=Follow
 [twitter-follow-url]: https://twitter.com/intent/follow?screen_name=pocztarski
