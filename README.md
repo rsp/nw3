@@ -33,17 +33,14 @@ Enjoys writing about Node.js on Stack Overflow, holding a rare Gold Node.js Badg
 
 https://pocztarski.com/
 
-Global object
+Previous workshop
 =
-The JavaScript global object
-(that has all global variables as properties)
-is called `global` in Node,
-`window` in the browser
-and `self` in Web Workers.
+See the documentation added after the last workshop:
 
-During the workshop I forgot about my own module on npm that returns the global object in all of those three environments, to normalize the name:
+* https://github.com/rsp/nw2
 
-* https://www.npmjs.com/package/the-global-object
+Node
+=
 
 Language
 =
@@ -93,15 +90,91 @@ Current Node API docs:
 
 * https://nodejs.org/api/
 
-
+Random Node advantages
+=
 HTTP/2 in the core since July, 2017
 
 Say hello to HTTP/2 for Node.js Core
 
 * https://medium.com/the-node-js-collection/say-hello-to-http-2-for-node-js-core-261ba493846e
 
-Destruct
+Functions
 =
+Destructuring example:
+
+```js
+(({ a: x, b: { c: [y, z] } }) => ({ x, y, z }))({ a: 1, b: { c: [2, 3] } });
+```
+
+d1.js:
+
+```js
+const f = ({
+  a: x,
+  b: {
+    c: [y, z]
+  }
+}) => ({ x, y, z });
+
+const r = f({ a: 1, b: { c: [2, 3] } });
+
+console.log(r);
+```
+
+Babel
+=
+Install:
+
+```sh
+$ npm install -g babel-cli
+```
+
+Explain:
+
+* https://babeljs.io/env/
+* https://www.npmjs.com/package/babel-preset-env
+* https://www.npmjs.com/package/babel-preset-es2015
+
+TypeScript
+=
+
+Explain how to install.
+
+```sh
+$ npm install -g typescript
+```
+
+d2.ts:
+
+```js
+const f = ({
+  a: x,
+  b: {
+    c: [y, z]
+  }
+}: {
+  a: string,
+  b: {
+    c: number[]
+  }
+}) => ({ x, y, z });
+
+const r = f({ a: '1', b: { c: [2, 3] } });
+
+console.log(r);
+```
+
+Compile:
+
+```sh
+$ tsc file
+```
+
+Run:
+
+```sh
+$ node file
+```
 
 
 [github-follow-url]: https://github.com/rsp
